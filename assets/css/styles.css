@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Readex Pro', sans-serif;
+    /*background: repeating-linear-gradient(45deg, #e90052 0%, #e90052 5%, #38003c 5%, #38003c 10%);*/
+    background-color: #e90052;
+}
+
+p {
+    padding: 20px;
+}
+
+#quiz {
+    padding: 10px;
 }
