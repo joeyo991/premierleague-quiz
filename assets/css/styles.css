@@ -8,14 +8,46 @@
 
 body {
     font-family: 'Readex Pro', sans-serif;
-    /*background: repeating-linear-gradient(45deg, #e90052 0%, #e90052 5%, #38003c 5%, #38003c 10%);*/
-    background-color: #e90052;
+    background: repeating-linear-gradient(45deg, #e90052 0%, #e90052 5%, #38003c 5%, #38003c 10%);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 250%;
 }
 
 p {
     padding: 20px;
+    font-size: 125%;
+}
+
+#body-div {
+    width: 100%;
+}
+
+#quiz-div{
+    width: fit-content;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    margin: auto;
 }
 
 #quiz {
-    padding: 10px;
+    margin: auto;
+    padding: 20px 0;
 }
+
+input, label {
+    margin-left: 20px;
+}
+
+#button {
+    margin-top: 20px;
+    
+}
+
