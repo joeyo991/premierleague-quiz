@@ -79,3 +79,11 @@ input, label {
     text-align: left;
     margin: auto;
 }
+
+#result {
+    visibility: hidden;
+    background-color: #fff;
+    margin: auto;
+    width: 650px;
+    border-radius: 10px;
+}
