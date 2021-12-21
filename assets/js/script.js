@@ -43,7 +43,25 @@ function runQuiz() {
         correct++;
     }
 
-    document.getElementById("result").style.visibility = "visible";
-    document.getElementById("correct-answers").innerHTML = "You got " + correct + " answers correct."
+    let messages = ["Relegation", "Mid Table", "Top Four", "Premier League Winner!"]
+    let score;
+
+    if (correct <= 3) {
+        score = 0;
+    }
+    if (correct > 3 && correct <= 6) {
+        score = 1;
+    }
+    if (correct > 6 && correct <= 9) {
+        score = 2;
+    }
+    if (correct == 10) {
+        score = 3;
+    }
+
+    document.getElementById("result-div").style.visibility = "visible";
+
+    document.getElementById("message").innerHTML = messages[score];
+    document.getElementById("correct-answers").innerHTML = `You got ${correct} answers correct.`;
 
 }
