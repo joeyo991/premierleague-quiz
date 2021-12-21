@@ -34,7 +34,7 @@ p {
     height: fit-content;
     margin: auto;
     width: 650px;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 30px;
     border-radius: 10px;
 }
@@ -62,6 +62,7 @@ input, label {
     color: #e90052;
     background-color: #38003c;
     border: 2px solid #38003c;
+    border-radius: 10%;
     cursor: pointer;
     font-size: 150%;
     margin-top: 20px;
