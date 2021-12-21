@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Readex Pro', sans-serif;
+    font-weight: bold;
     background: repeating-linear-gradient(45deg, #e90052 0%, #e90052 5%, #38003c 5%, #38003c 10%);
 }
 
@@ -16,6 +17,7 @@ h1 {
     color: #fff;
     padding: 20px;
     font-size: 250%;
+    font-weight: bold;
 }
 
 p {
@@ -28,13 +30,10 @@ p {
 }
 
 #quiz-div{
-    width: fit-content;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-items: center;
     height: fit-content;
     margin: auto;
+    width: 650px;
 }
 
 #quiz {
@@ -46,15 +45,33 @@ input, label {
     margin-left: 20px;
 }
 
-#button {
-    margin-top: 20px;
-    display: inline-block;
-    font-size: 200%;
-}
-
 .image {
     height: fit-content;
     width: fit-content;
     margin: auto;
     padding: 20px;
+    text-align: center;
+}
+
+#button {
+    padding: 5px;
+    font-family: 'Readex Pro', sans-serif;
+    color: #e90052;
+    background-color: #38003c;
+    border: 2px solid #38003c;
+    cursor: pointer;
+    font-size: 150%;
+    margin-top: 20px;
+    position: relative;
+    left: 40%;
+}
+
+#button:hover {
+    color: #38003c;
+    background-color: #e90052;
+}
+
+.answers {
+    text-align: left;
+    margin: auto;
 }
