@@ -29,11 +29,14 @@ p {
     width: 100%;
 }
 
-#quiz-div{
+.quiz-div{
     background-color: #fff;
     height: fit-content;
     margin: auto;
     width: 650px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 #quiz {
