@@ -48,6 +48,13 @@ input, label {
 
 #button {
     margin-top: 20px;
-    
+    display: inline-block;
+    font-size: 200%;
 }
 
+.image {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
