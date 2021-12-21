@@ -43,7 +43,8 @@ function runQuiz() {
         correct++;
     }
 
-    let messages = ["Relegation", "Mid Table", "Top Four", "Premier League Winner!"]
+    let messages = ["Relegation", "Mid Table", "Top Four", "Premier League Winner!"];
+    let gifs = ["assets/images/relegation.gif", "assets/images/mid-table.gif", "assets/images/top-four.gif", "assets/images/winner.gif"];
     let score;
 
     if (correct <= 3) {
@@ -63,5 +64,6 @@ function runQuiz() {
 
     document.getElementById("message").innerHTML = messages[score];
     document.getElementById("correct-answers").innerHTML = `You got ${correct} answers correct.`;
+    document.getElementById("gif").src = gifs[score];
 
 }
