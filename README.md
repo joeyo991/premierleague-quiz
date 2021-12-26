@@ -41,3 +41,24 @@ The Premier League Quiz is set up to be striking and easy on the eyes. It is imm
       * Each question also has a corresponding image that may or may not be a clue to the answer.
 
 ![Quiz questions](assets/readme-images/quiz-question.png)
+
+  * ### Finish Button
+      * This button is clicked when the user has finished the quiz.
+      * The button is styled with the colours of the background.
+      * When it is hovered over, the colours flip and there is a border around it.
+      * This button is what tells the JavaScript function to execute.
+
+![Finish Button](assets/readme-images/finish-button.png)
+![Finish Button hovered](assets/readme-images/finish-button-hover.png)
+
+  * ### Quiz Results
+      * The quiz results become visible when the finish button is pressed.
+      * If the user gets between 0-3, a sad gif and the word 'Relegation' appear.
+      * If the user gets between 4-6, a less sad gif and the phrase 'mid-table' appear.
+      * If the user gets between 7-9, a happy gif and the phrase 'top-four' appear.
+      * If the user gets all 10, an ecstatic gif and the word 'Champion' appear.
+      * The phrases are football terms and the gif corresponds to each term.
+      * The correct asnwers are also shown, with the ones the user got right appearing in green and the ones they didn't in red.
+
+![Quiz Results](assets/readme-images/quiz-results.png)
+
