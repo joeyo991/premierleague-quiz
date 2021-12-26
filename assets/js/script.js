@@ -13,34 +13,64 @@ function runQuiz() {
     let correct = 0;
 
     if (question1 == "alan-shearer") {
+        document.getElementById("answer-one").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-one").style.color = "red";
     }
     if (question2 == "manchester-united") {
+        document.getElementById("answer-two").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-two").style.color = "red";
     }
     if (question3 == "ryan-giggs") {
+        document.getElementById("answer-three").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-three").style.color = "red";
     }
     if (question4 == "seven") {
+        document.getElementById("answer-four").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-four").style.color = "red";
     }
     if (question5 == "one-hundred") {
+        document.getElementById("answer-five").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-five").style.color = "red";
     }
     if (question6 == "gareth-barry") {
+        document.getElementById("answer-six").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-six").style.color = "red";
     }
     if (question7 == "ninety-two") {
+        document.getElementById("answer-seven").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-seven").style.color = "red";
     }
     if (question8 == "marcus-bent") {
+        document.getElementById("answer-eight").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-eight").style.color = "red";
     }
     if (question9 == "frank-lampard") {
+        document.getElementById("answer-nine").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-nine").style.color = "red";
     }
     if (question10 == "brian-deane") {
+        document.getElementById("answer-ten").style.color = "green";
         correct++;
+    } else {
+        document.getElementById("answer-ten").style.color = "red";
     }
 
     let messages = ["Relegation", "Mid Table", "Top Four", "Premier League Winner!"];
@@ -66,5 +96,6 @@ function runQuiz() {
     document.getElementById("correct-answers").innerHTML = `You got ${correct} answers correct.`;
     document.getElementById("gif").src = gifs[score];
     document.getElementById("answers-header").innerHTML = "Answers"
+
 
 }
