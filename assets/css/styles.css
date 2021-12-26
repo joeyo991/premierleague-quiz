@@ -89,3 +89,9 @@ input, label {
     margin-bottom: 30px;
     text-align: center;
 }
+
+#answer-list {
+    list-style-type: none;
+    margin: auto;
+    padding-bottom: 20px;
+}

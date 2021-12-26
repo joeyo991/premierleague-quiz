@@ -65,5 +65,6 @@ function runQuiz() {
     document.getElementById("message").innerHTML = messages[score];
     document.getElementById("correct-answers").innerHTML = `You got ${correct} answers correct.`;
     document.getElementById("gif").src = gifs[score];
+    document.getElementById("answers-header").innerHTML = "Answers"
 
 }
