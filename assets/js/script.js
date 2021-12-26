@@ -1,3 +1,6 @@
+/**
+ * Runs the quiz when the 'finish' button is clicked.
+ */
 function runQuiz() {
 
     let question1 = document.quiz.question1.value;
@@ -12,6 +15,9 @@ function runQuiz() {
     let question10 = document.quiz.question10.value;
     let correct = 0;
 
+    //Checks  if the user's answer is correct.
+    //If it is, the answer will be green. If it's not, it will be red.
+    //Each correct answer is counted and displayed.
     if (question1 == "alan-shearer") {
         document.getElementById("answer-one").style.color = "green";
         correct++;
@@ -73,6 +79,7 @@ function runQuiz() {
         document.getElementById("answer-ten").style.color = "red";
     }
 
+    //Score arrays to display a message and a gif depending on the user's score.
     let messages = ["Relegation", "Mid Table", "Top Four", "Premier League Winner!"];
     let gifs = ["assets/images/relegation.gif", "assets/images/mid-table.gif", "assets/images/top-four.gif", "assets/images/winner.gif"];
     let score;
@@ -90,6 +97,7 @@ function runQuiz() {
         score = 3;
     }
 
+    //Makes the result div visible when the quiz is complete.
     document.getElementById("result-div").style.visibility = "visible";
 
     document.getElementById("message").innerHTML = messages[score];

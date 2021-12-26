@@ -1,11 +1,14 @@
+/*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
+/*Default styles for page*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Body styles*/
 body {
     font-family: 'Readex Pro', sans-serif;
     font-weight: bold;
@@ -29,6 +32,7 @@ p {
     width: 100%;
 }
 
+/*Styling of the quiz*/
 .quiz-div{
     background-color: #fff;
     height: fit-content;
@@ -56,6 +60,7 @@ input, label {
     text-align: center;
 }
 
+/*Submit button styles*/
 #button {
     padding: 5px;
     font-family: 'Readex Pro', sans-serif;
@@ -75,6 +80,7 @@ input, label {
     background-color: #e90052;
 }
 
+/*Styling of results div which is invisible until the quiz is complete*/
 .answers {
     text-align: left;
     margin: auto;

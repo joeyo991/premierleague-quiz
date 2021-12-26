@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontawesome link-->
     <script src="https://kit.fontawesome.com/4c49154d9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Premier League Quiz</title>
@@ -12,9 +13,10 @@
 
 <body>
 
-
+    <!--The body of the page-->
     <div id="body-div">
         <h1>The <br>Premier League <br>Quiz <i class="fas fa-futbol"></i></h1>
+        <!--The quiz form-->
         <form id="quiz" name="quiz">
             <div class="quiz-div">
                 <p>Q1) Who is the all-time Premier League top scorer?</p>
@@ -22,7 +24,7 @@
                 <div class="image">
                     <img src="assets/images/wayne-rooney.jpeg" alt="Wayne Rooney" height="100%" width="100%">
                 </div>
-
+                <!--Each question has four possible answers and an image.-->
                 <input type="radio" name="question1" id="a1" value="wayne-rooney" required>
                 <label for="a1">Wayne Rooney</label>
                 <br>
@@ -226,27 +228,29 @@
         </form>
     </div>
 
+    <!--This div becomes visible only after the quiz is complete-->
     <div id="result-div">
         <p id="message"></p>
         <p id="correct-answers"></p>
         <img id="gif">
         <p id="answers-header"></p>
-            <ul id="answer-list">
-                <li id="answer-one">Q1) Alan Shearer</li>
-                <li id="answer-two">Q2) Manchester United</li>
-                <li id="answer-three">Q3) Ryan Giggs</li>
-                <li id="answer-four">Q4) 7</li>
-                <li id="answer-five">Q5) 100</li>
-                <li id="answer-six">Q6) Gareth Barry</li>
-                <li id="answer-seven">Q7) 1992</li>
-                <li id="answer-eight">Q8) Marcus Bent</li>
-                <li id="answer-nine">Q9) Frank Lampard</li>
-                <li id="answer-ten">Q10) Brian Deane</li>
-            </ul>
+        <ul id="answer-list">
+            <li id="answer-one">Q1) Alan Shearer</li>
+            <li id="answer-two">Q2) Manchester United</li>
+            <li id="answer-three">Q3) Ryan Giggs</li>
+            <li id="answer-four">Q4) 7</li>
+            <li id="answer-five">Q5) 100</li>
+            <li id="answer-six">Q6) Gareth Barry</li>
+            <li id="answer-seven">Q7) 1992</li>
+            <li id="answer-eight">Q8) Marcus Bent</li>
+            <li id="answer-nine">Q9) Frank Lampard</li>
+            <li id="answer-ten">Q10) Brian Deane</li>
+        </ul>
 
     </div>
 
 
+    <!--Link to the javascript-->
     <script src="assets/js/script.js"></script>
 
 </body>
