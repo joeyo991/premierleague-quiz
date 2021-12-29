@@ -2,7 +2,6 @@
  * Runs the quiz when the 'finish' button is clicked.
  */
 function runQuiz() {
-
     let question1 = document.quiz.question1.value;
     let question2 = document.quiz.question2.value;
     let question3 = document.quiz.question3.value;
@@ -100,10 +99,11 @@ function runQuiz() {
     //Makes the result div visible when the quiz is complete.
     document.getElementById("result-div").style.visibility = "visible";
 
+    //Shows the message based on the users score.
     document.getElementById("message").innerHTML = messages[score];
+    //Shows the user how many answers they got correct.
     document.getElementById("correct-answers").innerHTML = `You got ${correct} answers correct.`;
+    //Shows a gif based on the users score.
     document.getElementById("gif").src = gifs[score];
-    document.getElementById("answers-header").innerHTML = "Answers"
-
-
+    document.getElementById("answers-header").innerHTML = "Answers";
 }

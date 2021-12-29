@@ -62,3 +62,24 @@ The Premier League Quiz is set up to be striking and easy on the eyes. It is imm
 
 ![Quiz Results](assets/readme-images/quiz-results.png)
 
+## Future Features
+
+* More Quizzes
+  * In the future this page could have a lot more than one quiz.
+* Share Results
+  * If i were to deploy this site for real in the future I would give the user the option to share their results.
+* Timer
+  * I could also add a timer to give the user only a limited time to complete the quiz, like many quiz sites have.
+
+# Technologies Used
+
+* [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - provides interactivity.
+* [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+* [Github](https://github.com/) - used to host and edit the website.
+
+# Testing
+
+## Code Validation
+The Premier League Quiz site has been tested thoroughly. All the code has been run through the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the
