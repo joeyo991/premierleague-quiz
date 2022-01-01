@@ -96,6 +96,7 @@ function runQuiz() {
         score = 3;
     }
 
+    //Removes visibility of the last question
     document.getElementById("q10").style.display = "none";
 
     //Makes the result div visible when the quiz is complete.
@@ -110,6 +111,7 @@ function runQuiz() {
     //document.getElementById("answers-header").innerHTML = "Answers";
 }
 
+//Functions to move to next questions
 function showQ1() {
     document.getElementById("q1").style.display = "block";
     document.getElementById("welcome").style.display = "none";
@@ -150,7 +152,7 @@ function showQ10() {
     document.getElementById("q10").style.display = "block";
     document.getElementById("q9").style.display = "none";
 }
-
+// Function to refresh the quiz
 function refreshQuiz(){ 
     window.location.reload(); 
 }

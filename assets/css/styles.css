@@ -33,6 +33,10 @@ h1 {
     font-weight: bold;
 }
 
+h1:hover {
+    cursor: pointer;
+}
+
 p {
     padding: 20px;
     font-size: 125%;
@@ -69,7 +73,7 @@ p {
     text-align: center;
 }
 
-/*Submit button styles*/
+/*Button styles*/
 .button {
     padding: 5px;
     font-family: 'Readex Pro', sans-serif;
@@ -101,6 +105,7 @@ p {
     margin: auto;
 }
 
+/*Media query for smaller screens*/
 @media only screen and (max-width: 768px) {
     .quiz-div {
         width: 80vw;
