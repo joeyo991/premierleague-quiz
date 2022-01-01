@@ -15,9 +15,9 @@ body {
     background: repeating-linear-gradient(
         45deg,
         #38003c 0%,
-        #38003c 5%,
-        #e90052 5%,
-        #e90052 10%
+        #38003c 25%,
+        #e90052 25%,
+        #e90052 50%
       );
 }
 
@@ -53,6 +53,7 @@ p {
 .button-div {
     margin: auto;
     text-align: center;
+    margin-top: 10px;
 }
 
 #quiz {
@@ -65,7 +66,6 @@ p {
     height: fit-content;
     width: fit-content;
     margin: auto;
-
     text-align: center;
 }
 
@@ -101,3 +101,8 @@ p {
     margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .quiz-div {
+        width: 80vw;
+    }
+} 
