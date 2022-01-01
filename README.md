@@ -4,7 +4,7 @@ The premier League quiz is a quiz I made for people who share my passion for foo
 
 Welcome to the process behind <a href="https://joeyo991.github.io/premierleague-quiz/" target="_blank" rel="noopener">The Premier League Quiz</a>
 
-![Premier League Quiz responsive design](assets/readme-images/plqresponsive.png)
+![Premier League Quiz responsive design](assets/readme-images/plq-responsive-test.png)
 
 # User Experience
 
