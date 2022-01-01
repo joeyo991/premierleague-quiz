@@ -13,6 +13,7 @@ body {
     font-family: 'Readex Pro', sans-serif;
     font-weight: bold;
     background: repeating-linear-gradient(45deg, #e90052 0%, #e90052 5%, #38003c 5%, #38003c 10%);
+    
 }
 
 h1 {
@@ -29,10 +30,6 @@ p {
     text-align: center;
 }
 
-#body-div {
-    width: 100vw;
-    height: 100vh;
-}
 
 /*Styling of the quiz*/
 .quiz-div{
@@ -113,3 +110,8 @@ input, label {
     text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+    #result-div {
+        width: 60vw;
+    }
+}
