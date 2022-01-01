@@ -96,6 +96,8 @@ function runQuiz() {
         score = 3;
     }
 
+    document.getElementById("q10").style.display = "none";
+
     //Makes the result div visible when the quiz is complete.
     document.getElementById("result-div").style.display = "block";
 
@@ -115,4 +117,40 @@ function showQ1() {
 function showQ2() {
     document.getElementById("q2").style.display = "block";
     document.getElementById("q1").style.display = "none";
+}
+function showQ3() {
+    document.getElementById("q3").style.display = "block";
+    document.getElementById("q2").style.display = "none";
+}
+function showQ4() {
+    document.getElementById("q4").style.display = "block";
+    document.getElementById("q3").style.display = "none";
+}
+function showQ5() {
+    document.getElementById("q5").style.display = "block";
+    document.getElementById("q4").style.display = "none";
+}
+function showQ6() {
+    document.getElementById("q6").style.display = "block";
+    document.getElementById("q5").style.display = "none";
+}
+function showQ7() {
+    document.getElementById("q7").style.display = "block";
+    document.getElementById("q6").style.display = "none";
+}
+function showQ8() {
+    document.getElementById("q8").style.display = "block";
+    document.getElementById("q7").style.display = "none";
+}
+function showQ9() {
+    document.getElementById("q9").style.display = "block";
+    document.getElementById("q8").style.display = "none";
+}
+function showQ10() {
+    document.getElementById("q10").style.display = "block";
+    document.getElementById("q9").style.display = "none";
+}
+
+function refreshQuiz(){ 
+    window.location.reload(); 
 }

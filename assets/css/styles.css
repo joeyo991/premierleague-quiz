@@ -12,8 +12,17 @@
 body {
     font-family: 'Readex Pro', sans-serif;
     font-weight: bold;
-    background: repeating-linear-gradient(45deg, #e90052 0%, #e90052 5%, #38003c 5%, #38003c 10%);
-    
+    background: repeating-linear-gradient(
+        45deg,
+        #38003c 0%,
+        #38003c 5%,
+        #e90052 5%,
+        #e90052 10%
+      );
+}
+
+#body-div {
+  height: 110vh;
 }
 
 h1 {
@@ -38,7 +47,6 @@ p {
     margin: auto;
     width: 650px;
     padding: 15px;
-    margin-bottom: 30px;
     border-radius: 10px;
 }
 
@@ -52,21 +60,13 @@ p {
     padding: 20px 0;
 }
 
-input, label {
-    margin-left: 20px;
-}
 
 .image {
     height: fit-content;
     width: fit-content;
     margin: auto;
-    padding: 20px;
-    text-align: center;
-}
 
-#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10 {
-    
-    display: none;
+    text-align: center;
 }
 
 /*Submit button styles*/
@@ -79,7 +79,6 @@ input, label {
     border-radius: 10%;
     cursor: pointer;
     font-size: 150%;
-    margin-top: 20px;
 }
 
 .button:hover {
@@ -93,25 +92,12 @@ input, label {
     margin: auto;
 }
 
-#result-div {
+.hide {
     display: none;
-    background-color: #fff;
-    margin: auto;
-    width: 650px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 #answer-list {
     list-style-type: none;
     margin: auto;
-    padding-bottom: 20px;
-    text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    #result-div {
-        width: 60vw;
-    }
-}
