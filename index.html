@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A challenging 10 question Premier lEague Quiz">
     <meta name="keywords" content="Premier League, Football, Quiz, Trivia">
-    <meta name="author" content="Joey O'Sullivan"> 
+    <meta name="author" content="Joey O'Sullivan">
     <!--fontawesome link-->
     <script src="https://kit.fontawesome.com/4c49154d9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,215 +19,220 @@
     <!--The body of the page-->
     <div id="body-div">
         <h1>The <br>Premier League <br>Quiz <i class="fas fa-futbol"></i></h1>
-        <!--The quiz form-->
-        <form id="quiz" name="quiz">
-            <div class="quiz-div">
-                <p>Welcome to the Premier League quiz. There are 10 questions, so how much do you know about the Premier League?</p>
-                <p>Q1) Who is the all-time Premier League top scorer?</p>
+        <div id="welcome" class="quiz-div">
+            <p>Welcome to the Premier League quiz. There are 10 questions. Best of Luck!</p>
+            <div class="button-div">
+                <button type="button" id="start-button" class="button" onclick="showQ1()">Start</button>
+            </div>
+        </div>
+        <div class="quiz-div" id="q1">
+            <p>Q1) Who is the all-time Premier League top scorer?</p>
 
-                <div class="image">
-                    <img src="assets/images/wayne-rooney.jpeg" alt="Wayne Rooney" height="100%" width="100%">
-                </div>
-                <!--Each question has four possible answers and an image.-->
-                <input type="radio" name="question1" id="a1" value="wayne-rooney" required>
-                <label for="a1">Wayne Rooney</label>
-                <br>
-                <input type="radio" name="question1" id="b1" value="alan-shearer">
-                <label for="b1">Alan Shearer</label>
-                <br>
-                <input type="radio" name="question1" id="c1" value="mohamed-salah">
-                <label for="c1">Mohamed Salah</label>
-                <br>
-                <input type="radio" name="question1" id="d1" value="harry-kane">
-                <label for="d1">Harry Kane</label>
+            <div class="image">
+                <img src="assets/images/wayne-rooney.jpeg" alt="Wayne Rooney" height="100%" width="100%">
+            </div>
+            <!--Each question has four possible answers and an image.-->
+            <input type="radio" name="question1" id="a1" value="wayne-rooney" required>
+            <label for="a1">Wayne Rooney</label>
+            <br>
+            <input type="radio" name="question1" id="b1" value="alan-shearer">
+            <label for="b1">Alan Shearer</label>
+            <br>
+            <input type="radio" name="question1" id="c1" value="mohamed-salah">
+            <label for="c1">Mohamed Salah</label>
+            <br>
+            <input type="radio" name="question1" id="d1" value="harry-kane">
+            <label for="d1">Harry Kane</label>
+            <div class="button-div">
+                <button type="button" class="button next-button" onclick="showQ2()">Next</button>
+            </div>
+        </div>
+
+        <div class="quiz-div" id="q2">
+            <p>Q2) Which team has won the most Premier League titles?</p>
+
+            <div class="image">
+                <img src="assets/images/clubs.jpeg" alt="The top six" width="100%" height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q2) Which team has won the most Premier League titles?</p>
+            <input type="radio" name="question2" id="a2" value="chelsea" required>
+            <label for="a2">Chelsea</label>
+            <br>
+            <input type="radio" name="question2" id="b2" value="arsenal">
+            <label for="b2">Arsenal</label>
+            <br>
+            <input type="radio" name="question2" id="c2" value="manchester-united">
+            <label for="c2">Manchester United</label>
+            <br>
+            <input type="radio" name="question2" id="d2" value="manchester-city">
+            <label for="d2">Manchester City</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/clubs.jpeg" alt="The top six" width="100%" height="100%">
-                </div>
+        <div class="quiz-div" id="q3">
+            <p>Q3) Who has the most assists in Premier League history?</p>
 
-                <input type="radio" name="question2" id="a2" value="chelsea" required>
-                <label for="a2">Chelsea</label>
-                <br>
-                <input type="radio" name="question2" id="b2" value="arsenal">
-                <label for="b2">Arsenal</label>
-                <br>
-                <input type="radio" name="question2" id="c2" value="manchester-united">
-                <label for="c2">Manchester United</label>
-                <br>
-                <input type="radio" name="question2" id="d2" value="manchester-city">
-                <label for="d2">Manchester City</label>
+            <div class="image">
+                <img src="assets/images/steven-gerrard.jpeg" alt="Steven Gerrard" width="100%" height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q3) Who has the most assists in Premier League history?</p>
+            <input type="radio" name="question3" id="a3" value="ryan-giggs" required>
+            <label for="a3">Ryan Giggs</label>
+            <br>
+            <input type="radio" name="question3" id="b3" value="steven-gerrard">
+            <label for="b3">Steven Gerrard</label>
+            <br>
+            <input type="radio" name="question3" id="c3" value="thierry-henry">
+            <label for="c3">Thierry Henry</label>
+            <br>
+            <input type="radio" name="question3" id="d3" value="trent-alexander-arnold">
+            <label for="d3">Trent Alexander-Arnold</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/steven-gerrard.jpeg" alt="Steven Gerrard" width="100%" height="100%">
-                </div>
+        <div class="quiz-div" id="q4">
+            <p>Q4) How many clubs have won the Premier League title?</p>
 
-                <input type="radio" name="question3" id="a3" value="ryan-giggs" required>
-                <label for="a3">Ryan Giggs</label>
-                <br>
-                <input type="radio" name="question3" id="b3" value="steven-gerrard">
-                <label for="b3">Steven Gerrard</label>
-                <br>
-                <input type="radio" name="question3" id="c3" value="thierry-henry">
-                <label for="c3">Thierry Henry</label>
-                <br>
-                <input type="radio" name="question3" id="d3" value="trent-alexander-arnold">
-                <label for="d3">Trent Alexander-Arnold</label>
+            <div class="image">
+                <img src="assets/images/leicester-city.jpeg" alt="Leicester City winning the league" width="100%"
+                    height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q4) How many clubs have won the Premier League title?</p>
+            <input type="radio" name="question4" id="a4" value="five" required>
+            <label for="a4">5</label>
+            <br>
+            <input type="radio" name="question4" id="b4" value="six">
+            <label for="b4">6</label>
+            <br>
+            <input type="radio" name="question4" id="c4" value="seven">
+            <label for="c4">7</label>
+            <br>
+            <input type="radio" name="question4" id="d4" value="eight">
+            <label for="d4">8</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/leicester-city.jpeg" alt="Leicester City winning the league" width="100%"
-                        height="100%">
-                </div>
+        <div class="quiz-div" id="q5">
+            <p>Q5) What is the record points total in a Premier League season?</p>
 
-                <input type="radio" name="question4" id="a4" value="five" required>
-                <label for="a4">5</label>
-                <br>
-                <input type="radio" name="question4" id="b4" value="six">
-                <label for="b4">6</label>
-                <br>
-                <input type="radio" name="question4" id="c4" value="seven">
-                <label for="c4">7</label>
-                <br>
-                <input type="radio" name="question4" id="d4" value="eight">
-                <label for="d4">8</label>
+            <div class="image">
+                <img src="assets/images/record-points-total.jpg" alt="Premier League record points total" width="100%"
+                    height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q5) What is the record points total in a Premier League season?</p>
+            <input type="radio" name="question5" id="a5" value="ninety-eight" required>
+            <label for="a5">98</label>
+            <br>
+            <input type="radio" name="question5" id="b5" value="one-hundred">
+            <label for="b5">100</label>
+            <br>
+            <input type="radio" name="question5" id="c5" value="one-hundred-six">
+            <label for="c5">106</label>
+            <br>
+            <input type="radio" name="question5" id="d5" value="one-hundred-fourteen">
+            <label for="d5">114</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/record-points-total.jpg" alt="Premier League record points total"
-                        width="100%" height="100%">
-                </div>
+        <div class="quiz-div" id="q6">
+            <p>Q6) Which player has the most Premier League appearances?</p>
 
-                <input type="radio" name="question5" id="a5" value="ninety-eight" required>
-                <label for="a5">98</label>
-                <br>
-                <input type="radio" name="question5" id="b5" value="one-hundred">
-                <label for="b5">100</label>
-                <br>
-                <input type="radio" name="question5" id="c5" value="one-hundred-six">
-                <label for="c5">106</label>
-                <br>
-                <input type="radio" name="question5" id="d5" value="one-hundred-fourteen">
-                <label for="d5">114</label>
+            <div class="image">
+                <img src="assets/images/gareth-barry.jpg" alt="Gareth Barry" height="100%" width="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q6) Which player has the most Premier League appearances?</p>
+            <input type="radio" name="question6" id="a6" value="mark-noble" required>
+            <label for="a6">Mark Noble</label>
+            <br>
+            <input type="radio" name="question6" id="b6" value="james-milner">
+            <label for="b6">James Milner</label>
+            <br>
+            <input type="radio" name="question6" id="c6" value="david-james">
+            <label for="c6">David James</label>
+            <br>
+            <input type="radio" name="question6" id="d6" value="gareth-barry">
+            <label for="d6">Gareth Barry</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/gareth-barry.jpg" alt="Gareth Barry" height="100%" width="100%">
-                </div>
+        <div class="quiz-div" id="q7">
+            <p>Q7) In what year did the Premier League begin?</p>
 
-                <input type="radio" name="question6" id="a6" value="mark-noble" required>
-                <label for="a6">Mark Noble</label>
-                <br>
-                <input type="radio" name="question6" id="b6" value="james-milner">
-                <label for="b6">James Milner</label>
-                <br>
-                <input type="radio" name="question6" id="c6" value="david-james">
-                <label for="c6">David James</label>
-                <br>
-                <input type="radio" name="question6" id="d6" value="gareth-barry">
-                <label for="d6">Gareth Barry</label>
+            <div class="image">
+                <img src="assets/images/first-season.jpg" alt="Stars of the first Premier League season" width="100%"
+                    height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q7) In what year did the Premier League begin?</p>
+            <input type="radio" name="question7" id="a7" value="ninety" required>
+            <label for="a7">1990</label>
+            <br>
+            <input type="radio" name="question7" id="b7" value="ninety-two">
+            <label for="b7">1992</label>
+            <br>
+            <input type="radio" name="question7" id="c7" value="ninety-five">
+            <label for="c7">1995</label>
+            <br>
+            <input type="radio" name="question7" id="d7" value="ninety-six">
+            <label for="d7">1996</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/first-season.jpg" alt="Stars of the first Premier League season"
-                        width="100%" height="100%">
-                </div>
+        <div class="quiz-div" id="q8">
+            <p>Q8) Who has played for the most Premier League clubs?</p>
 
-                <input type="radio" name="question7" id="a7" value="ninety" required>
-                <label for="a7">1990</label>
-                <br>
-                <input type="radio" name="question7" id="b7" value="ninety-two">
-                <label for="b7">1992</label>
-                <br>
-                <input type="radio" name="question7" id="c7" value="ninety-five">
-                <label for="c7">1995</label>
-                <br>
-                <input type="radio" name="question7" id="d7" value="ninety-six">
-                <label for="d7">1996</label>
+            <div class="image">
+                <img src="assets/images/nicolas-anelka.jpg" alt="Nicolas Anelka" width="100%" height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q8) Who has played for the most Premier League clubs?</p>
+            <input type="radio" name="question8" id="a8" value="nicolas-anelka" required>
+            <label for="a8">Nicolas Anelka</label>
+            <br>
+            <input type="radio" name="question8" id="b8" value="craig-bellamy">
+            <label for="b8">Craig Bellamy</label>
+            <br>
+            <input type="radio" name="question8" id="c8" value="marcus-bent">
+            <label for="c8">Marcus Bent</label>
+            <br>
+            <input type="radio" name="question8" id="d8" value="andy-cole">
+            <label for="d8">Andy Cole</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/nicolas-anelka.jpg" alt="Nicolas Anelka" width="100%" height="100%">
-                </div>
+        <div class="quiz-div" id="q9">
+            <p>Q9) Who has not won the Premier League with two different clubs?</p>
 
-                <input type="radio" name="question8" id="a8" value="nicolas-anelka" required>
-                <label for="a8">Nicolas Anelka</label>
-                <br>
-                <input type="radio" name="question8" id="b8" value="craig-bellamy">
-                <label for="b8">Craig Bellamy</label>
-                <br>
-                <input type="radio" name="question8" id="c8" value="marcus-bent">
-                <label for="c8">Marcus Bent</label>
-                <br>
-                <input type="radio" name="question8" id="d8" value="andy-cole">
-                <label for="d8">Andy Cole</label>
+            <div class="image">
+                <img src="assets/images/frank-lampard-john-terry.jpg" alt="Frank Lampard and John Terry" width="100%"
+                    height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q9) Who has not won the Premier League with two different clubs?</p>
+            <input type="radio" name="question9" id="a9" value="frank-lampard" required>
+            <label for="a9">Frank Lampard</label>
+            <br>
+            <input type="radio" name="question9" id="b9" value="robert-huth">
+            <label for="b9">Robert Huth</label>
+            <br>
+            <input type="radio" name="question9" id="c9" value="henning-berg">
+            <label for="c9">Henning Berg</label>
+            <br>
+            <input type="radio" name="question9" id="d9" value="ashley-cole">
+            <label for="d9">Ashley Cole</label>
+        </div>
 
-                <div class="image">
-                    <img src="assets/images/frank-lampard-john-terry.jpg" alt="Frank Lampard and John Terry"
-                        width="100%" height="100%">
-                </div>
+        <div class="quiz-div" id="q10">
+            <p>Q10) Who scored the first goal in the Premier League era?</p>
 
-                <input type="radio" name="question9" id="a9" value="frank-lampard" required>
-                <label for="a9">Frank Lampard</label>
-                <br>
-                <input type="radio" name="question9" id="b9" value="robert-huth">
-                <label for="b9">Robert Huth</label>
-                <br>
-                <input type="radio" name="question9" id="c9" value="henning-berg">
-                <label for="c9">Henning Berg</label>
-                <br>
-                <input type="radio" name="question9" id="d9" value="ashley-cole">
-                <label for="d9">Ashley Cole</label>
+            <div class="image">
+                <img src="assets/images/gordon-strachan.jpg" alt="Gordon Strachan for Leeds" width="100%" height="100%">
             </div>
 
-            <div class="quiz-div">
-                <p>Q10) Who scored the first goal in the Premier League era?</p>
-
-                <div class="image">
-                    <img src="assets/images/gordon-strachan.jpg" alt="Gordon Strachan for Leeds" width="100%"
-                        height="100%">
-                </div>
-
-                <input type="radio" name="question10" id="a10" value="brian-deane" required>
-                <label for="a10">Brian Deane</label>
-                <br>
-                <input type="radio" name="question10" id="b10" value="gordon-strachan">
-                <label for="b10">Gordon Strachan</label>
-                <br>
-                <input type="radio" name="question10" id="c10" value="les-ferdinand">
-                <label for="c10">Les Ferdinand</label>
-                <br>
-                <input type="radio" name="question10" id="d10" value="steve-bruce">
-                <label for="d10">Steve Bruce</label>
-                <br>
-                <input type="button" id="button" value="Finish" onclick="runQuiz();">
-            </div>
+            <input type="radio" name="question10" id="a10" value="brian-deane" required>
+            <label for="a10">Brian Deane</label>
+            <br>
+            <input type="radio" name="question10" id="b10" value="gordon-strachan">
+            <label for="b10">Gordon Strachan</label>
+            <br>
+            <input type="radio" name="question10" id="c10" value="les-ferdinand">
+            <label for="c10">Les Ferdinand</label>
+            <br>
+            <input type="radio" name="question10" id="d10" value="steve-bruce">
+            <label for="d10">Steve Bruce</label>
+            <br>
+            <input type="button" id="finish-button" class="button" value="Finish" onclick="runQuiz();">
+        </div>
 
         </form>
     </div>
@@ -237,7 +242,7 @@
         <p id="message"></p>
         <p id="correct-answers"></p>
         <img id="gif">
-        <p id="answers-header"></p>
+        <p id="answers-header">Answers:</p>
         <ul id="answer-list">
             <li id="answer-one">Q1) Alan Shearer</li>
             <li id="answer-two">Q2) Manchester United</li>

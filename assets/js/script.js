@@ -97,7 +97,7 @@ function runQuiz() {
     }
 
     //Makes the result div visible when the quiz is complete.
-    document.getElementById("result-div").style.visibility = "visible";
+    document.getElementById("result-div").style.display = "block";
 
     //Shows the message based on the users score.
     document.getElementById("message").innerHTML = messages[score];
@@ -105,5 +105,14 @@ function runQuiz() {
     document.getElementById("correct-answers").innerHTML = `You got ${correct} answers correct.`;
     //Shows a gif based on the users score.
     document.getElementById("gif").src = gifs[score];
-    document.getElementById("answers-header").innerHTML = "Answers";
+    //document.getElementById("answers-header").innerHTML = "Answers";
+}
+
+function showQ1() {
+    document.getElementById("q1").style.display = "block";
+    document.getElementById("welcome").style.display = "none";
+}
+function showQ2() {
+    document.getElementById("q2").style.display = "block";
+    document.getElementById("q1").style.display = "none";
 }
